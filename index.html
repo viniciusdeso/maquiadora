@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquiagem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="components/images/01.jpeg" alt="Foto de Perfil" class="profile-pic">
+        </div>
+        <div class="text-container">
+            <h1>Maquiadora</h1>
+            <p>Maquiagem</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="specialties">
+            <div class="specialty">Maquiagem</div>
+            <div class="specialty">Penteados</div>
+            <div class="specialty">Cursos</div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <style>
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    line-height: 1.6;
+    background: linear-gradient(135deg, #FFDAB9, #FFEFD5);
+    background-size: 200% 200%;
+    animation: gradientBG 5s ease infinite;
+    color: #333;
+}
+
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,228,181 ,0.8);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+}
+
+.text-container h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Especialidades */
+.specialties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.specialty {
+    background: rgba(255,228,181 ,0.8);
+    color: #050505;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.specialty:hover {
+    background: #FFDAB9;
+    transform: translateY(-5px);
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background 0.3s;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    width: 60px; /* Ajuste o tamanho do botão */
+    height: 60px; /* Ajuste o tamanho do botão */
+    text-decoration: none ; /* Excluir sublinhado */
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+}
+
+    </style>
+
+    
+</body>
+</html>
